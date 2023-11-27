@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bouncing Screensaver</title>
+  <meta name="description" content="Screensaver for Cynic Placebo's YouTube Channel">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../lib/BounceImg/BounceImg.css">
+  <script src="../../lib/BounceImg/BounceImg.js"></script>
+  <script src="main.js"></script>
+</head>
+
+<body onload="init()">
+  <div id="bounce_img_explanation" title="Description of Hot Keys for the Screensaver">
+    <table>
+      <thead><tr><th>Hot Keys</th><th>Explanation</th></tr></thead>
+      <tbody>
+        <tr><td>Space Bar</td><td>Enable/Disable Logo Color Changing</td></tr>
+        <tr><td>1 - 9</td><td>Slow Speed - Fast Speed</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- NOTE: #bounce_imgs required for main.js -->
+  <div id="bounce_imgs"> <!-- Note: later <img> will be ON TOP OF prior <img> -->
+    <img src="../../img/logo2.png" /> <!-- Note: no <img> scaling. Uses file dimensions -->
+    <img src="../../img/logo1.png" /> <!-- Note: images larger than screen size will break -->
+    <!-- Note: you can add 1 or many images -->
+  </div>
+</body>
+</html>

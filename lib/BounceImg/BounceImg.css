@@ -1,0 +1,24 @@
+body {
+  background:#000;
+  height:100vh;
+  margin:0px;
+  overflow:hidden;
+  width:100vw;
+}
+#bounce_imgs img { position:absolute; }
+/* Optional Explanation DIV #bounce_img_explanation */
+#bounce_img_explanation {
+  position:absolute;
+  left:20px;
+  top:10px;
+  color:#eee;
+}
+#bounce_img_explanation table {
+  border-collapse:collapse;
+  color:#eee;
+}
+#bounce_img_explanation table td, #bounce_img_explanation table th {
+  border:solid 1px #eee;
+  font-size:300%;
+  padding:3px 10px;
+}
