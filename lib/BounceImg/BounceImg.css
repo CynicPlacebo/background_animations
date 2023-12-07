@@ -1,5 +1,6 @@
+html { background:#000; }
+
 body {
-  background:#000;
   height:100vh;
   margin:0px;
   overflow:hidden;
@@ -9,9 +10,17 @@ body {
 /* Optional Explanation DIV #bounce_img_explanation */
 #bounce_img_explanation {
   position:absolute;
-  left:20px;
-  top:10px;
+  left:15px;
+  top:30px;
+  background-color:rgba(0,0,0,0.65);
+  border:solid 6px #555;
+  border-radius:18px;
   color:#eee;
+  padding:20px;
+  z-index:99999; /* Above everything */
+}
+#bounce_img_explanation h1 {
+  margin-top:-15px; /* because #counce_img_explanation_close pushed it down */
 }
 #bounce_img_explanation table {
   border-collapse:collapse;
@@ -19,6 +28,29 @@ body {
 }
 #bounce_img_explanation table td, #bounce_img_explanation table th {
   border:solid 1px #eee;
-  font-size:300%;
+  font-size:200%;
   padding:3px 10px;
+}
+
+#bounce_img_explanation_close {
+  float:right;
+  background-color:#ba0000; /*Medium Red*/
+  border:solid 2px #610000; /*Dark Red*/
+  border-radius:8px;
+  box-sizing:border-box;
+  color:#fff;
+  cursor:pointer;
+  font-size:22pt;
+  font-weight:bold;
+  height:26px;
+  width:26px;
+  line-height:75%;
+  margin:-15px;
+  overflow:hidden;
+  padding:0px 0px 0px 2px; /*does better than text-align:center*/
+}
+
+#bounce_img_explanation_close:hover {
+  background-color:#610000; /*swap back/border*/
+  border:solid 2px #ba0000;
 }

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bouncing Screensaver</title>
+  <meta name="description" content="DVD Screensaver Homage">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../lib/BounceImg/BounceImg.css">
+  <script src="../../lib/BounceImg/BounceImg.js"></script>
+  <script src="../../lib/BounceImg/bounce_img.js"></script>
+</head>
+
+<body onload="bounce_img_init(null, 1)">
+  <!-- NOTE: #bounce_imgs is default ID for bounce_img.js -->
+  <div id="bounce_imgs"> <!-- Note: later <img> will be ON TOP OF prior <img> -->
+    <!-- Note: no <img> scaling in BounceImg.js (you have to set it) -->
+    <img src="../../img/dvd.png" style="width:45vw;" />
+    <!-- Note: images larger than screen size will break -->
+    <!-- Note: you can add 1 or many images -->
+  </div>
+</body>
+</html>
