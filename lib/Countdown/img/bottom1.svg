@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="901.99994"
+   height="901.99994"
+   viewBox="0 0 300.66665 300.66665"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <rect
+       x="145.25226"
+       y="180.92826"
+       width="628.15233"
+       height="583.55734"
+       id="rect1" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath20">
+      <rect
+         style="fill:#ff0000;stroke:none;stroke-width:3;stroke-linecap:square;stroke-linejoin:miter;paint-order:stroke markers fill;stop-color:#000000"
+         id="rect20"
+         width="78"
+         height="45.033199"
+         x="763.61322"
+         y="452.82422" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath54">
+      <path
+         id="path54"
+         style="stroke-width:0.0999999;stroke-linecap:square;paint-order:markers fill stroke;stop-color:#000000"
+         d="m 1691.1994,-792.32001 h 1634.8919 v 92.82806 H 1691.1994 Z" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath55">
+      <path
+         id="path55"
+         style="stroke-width:0.1;stroke-linecap:square;paint-order:markers fill stroke;stop-color:#000000"
+         d="m 1736.6147,-745.57287 h 1589.4765 v 72.46715 H 1736.6147 Z" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath25">
+      <rect
+         style="fill:#ff0000;stroke:none;stroke-width:3;stroke-linecap:square;stroke-linejoin:miter;paint-order:stroke markers fill;stop-color:#000000"
+         id="rect25-8"
+         width="78"
+         height="45.033199"
+         x="763.61322"
+         y="452.82422" />
+    </clipPath>
+  </defs>
+  <g
+     id="layer1"
+     transform="translate(-189.94096,-31.673233)">
+    <path
+       id="path17"
+       style="display:inline;fill:#7321de;stroke:none;stroke-width:1.94467;stroke-linecap:round;stroke-linejoin:round"
+       d="m 191.70593,180.63092 a 148.66667,148.66667 0 0 0 -0.0983,1.37565 148.66667,148.66667 0 0 0 148.66666,148.66667 148.66667,148.66667 0 0 0 148.66667,-148.66667 148.66667,148.66667 0 0 0 -0.0339,-1.37565 H 464.9038 a 124.66667,124.66667 0 0 1 0.0371,1.37565 124.66667,124.66667 0 0 1 -124.66667,124.66667 124.66667,124.66667 0 0 1 -124.66666,-124.66667 124.66667,124.66667 0 0 1 0.10807,-1.37565 z"
+       transform="translate(1.0095769e-6)" />
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+._counter_div {
+  position:relative;
+}
+._counter_div img {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:100%;
+}
+
+._counter_div img._counter_cap_right {
+  transform:scaleX(-1); /* flip horizontal */
+}
+
+.counter_num_crit { filter:hue-rotate(0.4turn) contrast(4) brightness(0.7); }
+.counter_num_warn { filter:hue-rotate(0.5turn) contrast(2); }

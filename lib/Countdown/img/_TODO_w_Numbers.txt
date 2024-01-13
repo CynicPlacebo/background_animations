@@ -1,0 +1,5 @@
+Delete anything that looks like this:
+
+font-size:172.889px;font-family:MelodBold;-inkscape-font-specification:'MelodBold, Normal';text-align:center;white-space:pre;display:inline;
+
+Make it look like 8.svg (I minimized that one manually)

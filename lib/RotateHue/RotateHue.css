@@ -1,0 +1,73 @@
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar { display:none; }
+/* Hide scrollbar for IE, Edge and Firefox */
+html,body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+} 
+
+html {
+  background:#000;
+}
+
+body {
+  height:100vh; /* slightly too big for rounding */
+  margin:0px;
+  padding:0px;
+  width:100vw;
+  white-space:nowrap;
+}
+#rotate_hues img { position:absolute; }
+/* Optional Explanation DIV #rotate_hue_explanation */
+#rotate_hue_explanation {
+  position:absolute;
+  left:15px;
+  top:30px;
+  background-color:rgba(0,0,0,0.65);
+  border:solid 6px #555;
+  border-radius:18px;
+  color:#eee;
+  padding:20px;
+  z-index:99999; /* Above everything */
+}
+#rotate_hue_explanation h1 {
+  margin-top:-15px; /* because #counce_img_explanation_close pushed it down */
+}
+#rotate_hue_explanation table {
+  border-collapse:collapse;
+  color:#eee;
+}
+#rotate_hue_explanation table td, #rotate_hue_explanation table th {
+  border:solid 1px #eee;
+  font-size:200%;
+  padding:3px 10px;
+}
+
+#rotate_hue_explanation_close {
+  float:right;
+  background-color:#ba0000; /*Medium Red*/
+  border:solid 2px #610000; /*Dark Red*/
+  border-radius:8px;
+  box-sizing:border-box;
+  color:#fff;
+  cursor:pointer;
+  font-size:22pt;
+  font-weight:bold;
+  height:26px;
+  width:26px;
+  line-height:75%;
+  margin:-15px;
+  overflow:hidden;
+  padding:0px 0px 0px 2px; /*does better than text-align:center*/
+}
+
+#rotate_hue_explanation_close:hover {
+  background-color:#610000; /*swap back/border*/
+  border:solid 2px #ba0000;
+}
+
+
+.rotate_hue_container {
+  /*height:100vh;*/ /*Slightly larger than body, for rounding errors*/
+  /*width:100vw;*/
+}
