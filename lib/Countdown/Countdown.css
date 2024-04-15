@@ -1,16 +1,50 @@
 ._counter_div {
   position:relative;
+  background-size:cover;
+  white-space:nowrap;
 }
-._counter_div img {
+/* Explicit Z-Index Assignments */
+#_counter_back       { z-index:1; }
+#_counter_bar        { z-index:2; }
+#_counter_bar_right  { z-index:3; }
+._counter_digit svg  { z-index:4; }
+
+
+#_counter_back, ._counter_num {
   position:absolute;
-  left:0px;
-  top:0px;
+  left:0;
+  top:0;
+  height:100%;
   width:100%;
 }
 
-._counter_div img._counter_cap_right {
-  transform:scaleX(-1); /* flip horizontal */
+
+#_counter_bar_right {
+ margin-left:-100%;
+ transform:scaleX(-1); /* flip horizontal */
 }
 
-.counter_num_crit { filter:hue-rotate(0.4turn) contrast(4) brightness(0.7); }
-.counter_num_warn { filter:hue-rotate(0.5turn) contrast(2); }
+._counter_div ._counter_digit, ._counter_div ._counter_pane {
+  position:absolute;
+  height:100%;
+  width:100%;
+  margin:0px;
+  padding:0px;
+}
+._counter_div ._counter_pane {
+  width:50%;
+  overflow:hidden;
+}
+/*._counter_pane_right { left:49.93%; }*/ /*WHY NOT 50%?!? Somehow it's bumped too far right just a smidge*/
+._counter_pane_right { right:0.107%; } /*WHY NOT 0%?!? Somehow it's bumped too far right just a smidge*/
+
+._counter_div div svg {
+  position:absolute;
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+}
+._counter_div ._counter_pane svg {
+  width:200%; /*We force half the image out of the box to hide the bar's "tail" when it rotates*/
+}

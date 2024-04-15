@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Countdown Demo</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="Countdown.css">
+  <style type="text/css">
+    /* Shows you can custom style your page how you want */
+    html,body { background-color:#222; color:#eee; text-align:center; }
+    #countdown { display:inline-block; margin:10px; width:650px; }
+    #explanation { position:absolute; right:20px; top:12px; }
+  </style>
+
+  <script src="countdown_runner.js"></script>
+  <script src="Countdown.js"></script>
+</head>
+
+<body onload="initCountdown('countdown', '', 10, 0, 500, 3, 0)">
+  <div id="explanation">
+    Enter to start countdown.<br/>
+    Space to pause/unpause.<br/>
+    "r" to reset the timer.<br/>
+  </div>
+  <div id="countdown"></div>
+</body>
+</html>
