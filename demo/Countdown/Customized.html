@@ -7,20 +7,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="../../lib/Countdown/Countdown.css">
   <style type="text/css">
-    html,body { background-color:#111; color:#eee; text-align:center; }
-    #countdown { display:inline-block; margin:50px; width:700px; }
-    #explanation { position:absolute; right:20px; top:12px; }
+    /* Shows you can custom style your page how you want */
+    html,body { background-color:#222; color:#eee; text-align:center; }
+    ._countdown { margin:10px; width:200px; } /* If you don't specify width, it is 22px */
+	/* They don't have to be sized the same */
+	.bigger { width:400px; }
+	.smaller { width:100px; }
   </style>
   <script src="../../lib/Countdown/countdown_runner.js"></script>
   <script src="../../lib/Countdown/Countdown.js"></script>
 </head>
 
-<body onload="initCountdown('countdown', 60, 99, 150, 90, 99, true)">
-  <div id="explanation">
-    Enter to start countdown.<br/>
-    Space to pause/unpause.<br/>
-    "r" to reset the timer.<br/>
-  </div>
-  <div id="countdown"></div>
-</body>
-</html>
+<body onload="_countdown_init(true)">
+  <div id="explanation">Hot Keys: Enter to start | Space to pause/unpause | R to reset</div>
+  <hr/>
+
+  <!-- Basic Default Countdown -->
+  <div class="_countdown" title="Default Counter with no Customization"></div>
+  <!-- 1 Customization with Dataset -->
+  <div class="_countdown" data-color_stroke="#FFF"></div>
+  <!-- Configured with data-config (sort of like CSS styling) [Colors must be valid SVG keywords or Hex values] -->
+  <div class="_countdown smaller" data-config="start:0;stop:10;speedMS:500;warnAt:8;critAt:10;color_stroke:white;color_back:#006;color_back_stroke:#000000;color_bar:#00f;color_text:#777;color_text_stroke:#000;color_warn:#f0f;color_crit:#606;"></div>
+  <!-- Configured with individual datasets (Max count: 0 - 99) [skipped data-color_stroke, as it defines ALL unspecified strokes] -->
+  <div class="_countdown bigger" data-start="60" data-stop="99" data-speedMS="150" data-warnAt="90" data-critAt="97"
+       data-color_back="red" data-color_back_stroke="crimson" data-color_bar="#09f"
+       data-color_text="#66ccff" data-color_text_stroke="blue"
+       data-color_warn="yellow" data-color_warn_stroke="black"
+	   data-color_crit="red" data-color_crit_stroke="crimson"></div>
+  <!-- Conflicting Config (individual datasets trump data-config) [same data-config as #3, but will be overridden] -->
+  <div class="_countdown bigger"
+       data-config="start:0;stop:10;speedMS:500;warnAt:8;critAt:10;color_stroke:white;color_back:#006;color_back_stroke:#000000;color_bar:#00f;color_text:#777;color_text_stroke:#000;color_warn:#f0f;color_crit:#606;"
+       data-start="5" data-stop="1" data-speedMS="2000" data-warnAt="2" data-critAt="1"
+       data-color_back="blue" data-color_back_stroke="navy" data-color_bar="cornflowerblue"
+       data-color_text="cornflowerblue" data-color_text_stroke="#000"
+       data-color_warn="orange" data-color_warn_stroke="#FFF"
+	   data-color_crit="crimson" data-color_crit_stroke="#FffFfF"></div>
+</body></html>

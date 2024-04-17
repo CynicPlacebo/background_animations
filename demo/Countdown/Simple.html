@@ -8,19 +8,15 @@
   <link rel="stylesheet" href="../../lib/Countdown/Countdown.css">
   <style type="text/css">
     html,body { background-color:#111; color:#eee; text-align:center; }
-    #countdown { display:inline-block; margin:50px; width:700px; }
-    #explanation { position:absolute; right:20px; top:12px; }
+    ._countdown { width:50%; }
+	#explanation { position:absolute; right:15px; }
   </style>
   <script src="../../lib/Countdown/countdown_runner.js"></script>
   <script src="../../lib/Countdown/Countdown.js"></script>
 </head>
 
-<body onload="initCountdown('countdown', 10, 0, 1000, 3, 0)">
-  <div id="explanation">
-    Enter to start countdown.<br/>
-    Space to pause/unpause.<br/>
-    "r" to reset the timer.<br/>
-  </div>
-  <div id="countdown"></div>
+<body onload="_countdown_init(true)">
+  <div id="explanation">Hot Keys: Enter to start | Space to pause/unpause | R to reset</div>
+  <div class="_countdown"></div>
 </body>
 </html>
